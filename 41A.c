@@ -10,10 +10,6 @@ int main(){
     for(int i=0;i<l;i++){
         s3[i]=s1[l-1-i];
     }
-    /*
-    int flag=strcmp(s2,s3);
-    printf("%d\n",flag);
-    */
    int flag=0;
    for(int i=0;i<l;i++){
         if(s2[i]!=s3[i]){

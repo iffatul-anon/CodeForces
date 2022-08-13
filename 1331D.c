@@ -5,6 +5,5 @@ int main(){
     scanf("%s",&s);
     int a=s[6];
     printf("%d\n",a%2);
-
     return 0;
 }
