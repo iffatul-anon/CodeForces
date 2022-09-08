@@ -15,5 +15,5 @@ else{
     printf("NO\n");
 }
 
-    return 0;
+    return 1;
 }
