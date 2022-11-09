@@ -1,26 +1,20 @@
 #include<stdio.h>
+#include<string.h>
 int main(){
-    long int n,t,flag=1;
-    scanf("%ld",&n);
-    if(n>0){
-    while(n>0){
-        t=n%10;
-        n=n/10;
-        if(t!=4 && t!=7){
-            flag=0;
-            break;
+    char s[20];
+    scanf("%s",&s);
+    int l=strlen(s);
+    int count=0;
+    for(int i=0;i<l;i++){
+        if(s[i]=='4' || s[i]=='7'){
+            count++;
         }
     }
-    if(flag==1){
+    if(count==4 || count==7){
         printf("YES\n");
     }
     else{
         printf("NO\n");
     }
-    }
-    else{
-        printf("NO\n");
-    }
     return 0;
-
 }
