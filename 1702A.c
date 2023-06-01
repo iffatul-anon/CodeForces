@@ -1,24 +1,40 @@
 #include<stdio.h>
-#include<math.h>
 int main(){
-
-    int t,m,d=0,x=0,y=0,z;
+    int t;
     scanf("%d",&t);
-
-    for(int i=0;i<t;i++){
+    while(t--){
+        int m;
         scanf("%d",&m);
-       
-       while(y<=m){
-        y=pow(10,x);
-        x++;
-       }
-
-       z=x-1;
-
-       d=m-pow(10,z);
-       printf("%d\n",d);
-
+        if(m>=1000000000){
+            printf("%d\n",m-1000000000);
+        }
+        else if(m>=100000000){
+            printf("%d\n",m-100000000);
+        }
+        else if(m>=10000000){
+            printf("%d\n",m-10000000);
+        }
+        else if(m>=1000000){
+            printf("%d\n",m-1000000);
+        }
+        else if(m>=100000){
+            printf("%d\n",m-100000);
+        }
+        else if(m>=10000){
+            printf("%d\n",m-10000);
+        }
+        else if(m>=1000){
+            printf("%d\n",m-1000);
+        }
+        else if(m>=100){
+            printf("%d\n",m-100);
+        }
+        else if(m>=10){
+            printf("%d\n",m-10);
+        }
+        else if(m>=1){
+            printf("%d\n",m-1);
+        }
     }
-
     return 0;
 }
