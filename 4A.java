@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Anon{
+public class 4A{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int w = sc.nextInt();
